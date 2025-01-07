@@ -45,6 +45,11 @@ p {
   font-weight: 300;
 }
 
+ul {
+  margin-bottom: 1em;
+  font-weight: 300;
+}
+
 section {
   margin-bottom: 2.5em;  /* We want a little more space between sections */
 }
