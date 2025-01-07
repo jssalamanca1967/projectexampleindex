@@ -61,13 +61,42 @@
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
     <section>
         <div class="chart-description">
+            <h2><b>Aim</b></h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                The project aims to present Colombia's medium-term fiscal outlook based on the 2024 Medium-Term Fiscal Framework (MTFF) projections and answer the question: Is Colombia's medium-term macroeconomic and fiscal scenario reliable to ensure debt sustainability?
+                To better understand the project, it is important to note that the Medium-Term Fiscal Framework is the macroeconomic and fiscal roadmap the National Government uses for the next 10 years. This document is legally mandated (Article 1 of Law 819 of 2003), is published every June, and serves as a primary input for discussions with investors, credit rating agencies, and institutions, as well as for debates in Congress and with other stakeholders.
+                As an advisor to the Ministry of Finance, I intend to apply the knowledge gained during the course. I deepened my understanding of graph construction in Python to visualise the medium-term projected results.
+            </p>
+        </div>        
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2><b>Challenges and data</b></h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                During the process, several challenges arose, some related to data accessibility and others related to graph construction. The Ministry of Finance's institutional website was recently updated, so I had to rely on data I had downloaded at the beginning of the project, as it is currently unavailable on the Ministry's website. 
+                However, all the data sources are from the Ministry of Finance and Public Credit of Colombia, which is legally obligated to publish this information periodically to promote transparency in public finances. (MinHacienda)
+                The analytical challenges were numerous:
+                •	I needed to strengthen my knowledge of Python, particularly the libraries matplotlib and seaborn. These libraries generate the charts I needed for the analysis, and I also needed to know how to use the melt function to reshape the data for visualization.
+                •	Understanding that charts are built layer by layer. This was crucial, especially since each chart had a high level of detail involving information within the bars, lines, and labels for different periods.
+                •	There is no straightforward way to place data labels. Therefore, it was necessary to use the plt.text function and spatially position them in x and y coordinates.
+                •	After creating the charts layer by layer using Matplotlib, I realised that another library called Plotly can be used to create dynamic charts more simply and directly.
+                •	To embed Plotly charts in HTML, I had to learn what an iframe and a script in HTML are.
+                •	Finally, one of the biggest challenges was learning to ask Google the right questions to achieve the desired outcome.
+                The most relevant data include fiscal and primary balances, gross and net debt, Central National and General Government revenues and expenditures, and the current account balance. This data is critical for visualising the scenario that ensures medium-term fiscal stability and debt sustainability in strict compliance with the Fiscal Rule. For more information about the definitions mentioned above, go to the glossary.
+            </p>
+        </div>        
+    </section>
+    
+    <section>
+        <div class="chart-description">
             <h2>Section 1: Current account balance projections in the medium term (% of GDP)</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                 CHANGEME!!!
             </p>
         </div>
         <div style = "margin: auto;width: 50%;padding: 10px;">
-            <iframe width="900" height="400" frameborder="0" scrolling="no" src="./g33.html"></iframe>
+            <iframe width="900" height="400" frameborder="0" scrolling="no" src="./G33.html"></iframe>
         </div>
         
     </section>
